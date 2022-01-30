@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Page</title>
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+    <!--/-->
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--/-->
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--/-->
+</head>
+<body>
+
+    <!-- ATM CONTAINER -->
+    <div class="ATM-container">
+        <div class="content">
+
+            <!-- COMPANY TITLE -->
+                <h1 class="company-title">atm</h1>
+            <!--/-->
+
+            <!-- MONEY REMOVE -->
+            <div class="money-remove">
+                <label>Amount of money:</label>
+                <input 
+                id="money" 
+                type="number"
+                name="money" 
+                placeholder="$"
+                autofocus />
+                <button id="btn-take-out">Take out</button>
+            </div>
+            <!--/-->
+
+            <!-- TOTAL AMOUNT TAKEN OUT -->
+            <div class="total-amount-taken-out">
+                <p>Money delivered: </p>
+                <div class="container">
+                    <div id="ticket-1" class="tick">
+                        <img 
+                        src="./img/billeteDe10.jpg" 
+                        alt="billete de 10">
+                        <p class="amount-1">0</p>
+                    </div>
+                    <div id="ticket-2" class="tick">
+                        <img 
+                        src="./img/billeteDe20.jpg" 
+                        alt="billete de 20">
+                        <p class="amount-2">0</p>
+                    </div>
+                    <div id="ticket-3" class="tick">
+                        <img 
+                        src="./img/billeteDe50.jpg" 
+                        alt="billete de 50">
+                        <p class="amount-3">0</p>
+                    </div>
+                </div>
+                <div id="error"></div>
+                </div>
+            <!--/-->
+
+            <!-- MAX MONEY TAKEN OUT -->
+            <div class="max-money-taken-out">
+                <p>Max taken out:</p>
+                <p id="max-money">$ 280000</p>
+            </div>
+            <!--/-->
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                by Carl115
+            </footer>
+            <!--/-->
+
+        </div>
+    </div>
+    <!--/-->
+
+    <!-- SCRIPTS -->
+    <script src="./index.js"></script>
+    <!--/-->
+</body>
+</html>

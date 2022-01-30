@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ATM-container {
+    background: #000000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: #2E2E2E ;
+    width: 900px;
+    height: 600px;
+    color: #00CE06;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    align-items: stretch;
+    justify-content: center;
+}
+
+.company-title {
+    width: 100%;
+    height: 65px;
+    margin: 15px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*money-remove*/
+.money-remove {
+    width: 100%;
+    display: flex;
+}
+
+.money-remove label {
+    margin-right: 10px;
+}
+
+.money-remove #money {
+    background: #202020 ;
+    width: 300px;
+    height: 30px;
+    color: #E1E800;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.money-remove #money:focus {
+    outline: none;
+    border: 1px solid #E1E800;
+}
+
+.money-remove #money[type=number]::-webkit-inner-spin-button,
+.money-remove #money[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.money-remove #money[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.money-remove #btn-take-out {
+    background: #202020 ;
+    width: 100px;
+    height: 30px;
+    color: #E1E800;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.money-remove #btn-take-out:hover {
+    border: 1px solid #E1E800;
+}
+/*-/-*/
+
+/*total-amount-taken-out*/
+.total-amount-taken-out {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.total-amount-taken-out .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-amount-taken-out .tick {
+    width: 140px;
+    margin: 15px;
+}
+
+.total-amount-taken-out .tick img {
+    width: 100%;
+    height: 70px;
+}
+
+.total-amount-taken-out .tick p {
+    width: 100%;
+    text-align: center;
+    color: #E1E800;
+}
+
+.total-amount-taken-out #ticket-1,
+.total-amount-taken-out #ticket-2,
+.total-amount-taken-out #ticket-3 {
+    display: none;
+}
+
+.total-amount-taken-out #error {
+    width: 100%;
+    margin: 20px 0;
+    color: #EC1010;
+    font-family: 'Rajdhani', sans-serif;
+    display: none;
+}
+/*-/-*/
+
+/*max-money-taken-out*/
+.max-money-taken-out {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.max-money-taken-out p {
+    margin-right: 15px;
+}
+
+#max-money {
+    color: #E1E800;
+}
+/*-/-*/
+
+/*footer*/
+.footer {
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Rajdhani', sans-serif;
+    color: #E1E800;
+}
+/*-/-*/
