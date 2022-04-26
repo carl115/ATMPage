@@ -24,10 +24,14 @@ function amtG() {
     }
 
     if (money > total || money < 0) {
-        const paragraph = document.createElement("p");
-        paragraph.innerHTML = "Error: value not valid";
+        //const paragraph = document.createElement("p");
+        //paragraph.innerHTML = "Error: value not valid";
         error.style.display = "block";
-        error.appendChild(paragraph);
+        //error.appendChild(paragraph);
+        
+        ticketOne.style.display = "none";
+        ticketTwo.style.display = "none";
+        ticketThree.style.display = "none";
     }
     else {
         error.style.display = "none";
@@ -51,18 +55,18 @@ function amtG() {
     
             switch (tickets[m].value) {
                 case 50000:
-                    console.log(ticket = ticketThree);
-                    console.log(amountT = amountTicketThree);
+                    ticket = ticketThree;
+                    amountT = amountTicketThree;
                     generateT(div, ticket, amountT);
                     break;
                 case 20000:
-                    console.log(ticket = ticketTwo);
-                    console.log(amountT = amountTicketTwo);
+                    ticket = ticketTwo;
+                    amountT = amountTicketTwo;
                     generateT(div, ticket, amountT);
                     break;
                 case 10000:
-                    console.log(ticket = ticketOne);
-                    console.log(amountT = amountTicketOne);
+                    ticket = ticketOne;
+                    amountT = amountTicketOne;
                     generateT(div, ticket, amountT);
                     break;
                 default: console.log('Error in the machine');
@@ -84,7 +88,7 @@ function generateT(d, t, aTick) {
 
 const tickets = [];
 
-//280
+//280000
 let ticketFifThou = new ticket(4, 50000);
 let ticketTwenThou = new ticket(3, 20000);
 let ticketTenThou = new ticket(2, 10000);
