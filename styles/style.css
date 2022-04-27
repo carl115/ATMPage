@@ -239,28 +239,67 @@
 
 /* WIDTH 320 */
 @media (max-width: 320px) {
+    .content {
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .content .company-title {
+        height: 35px;
+        margin-top: 0;
+        font-size: 30px;
+    }
+
     .money-remove label {
-        font-size: 32px;
+        font-size: 20px;
     }
 
     .money-remove label, .money-remove input, .money-remove button {
-        margin: 15px 0;
+        margin: 8px auto;
     }
 
     .money-remove #money {
         width: 280px;
-        height: 40px;
-        font-size: 35px;
+        height: 30px;
+        margin-right: 0;
+        font-size: 30px;
     }
 
     .money-remove #btn-take-out {
-        width: 275px;
-        height: 50px;
-        font-size: 35px;
+        width: 230px;
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .total-amount-taken-out p {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .total-amount-taken-out .container {
+        width: 100%;
+        height: 125px;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .total-amount-taken-out .container #ticket-1 {
+        margin-top: 305px;
     }
 
     .max-money-taken-out {
-        flex-direction: column;
+        margin-top: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .max-money-taken-out p {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 20px;
     }
 }
 /*-/-*/
