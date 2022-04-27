@@ -155,3 +155,114 @@
     color: #E1E800;
 }
 /*-/-*/
+
+/* RESPONSIVE */
+
+/* WIDTH 768 */
+@media (max-width: 768px) {
+    .ATM-container {
+        padding: 0 30px;
+    }
+
+    .content {
+        height: 700px;
+    }
+}
+/*-/-*/
+
+/* WIDTH 425 */
+@media (max-width: 425px) {
+    .ATM-container {
+        background: none;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    .content .company-title {
+        margin-top: 10px;
+    }
+
+    .money-remove {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .money-remove label {
+        font-size: 32px;
+    }
+
+    .money-remove label, .money-remove input, .money-remove button {
+        margin: 20px 0;
+    }
+
+    .money-remove #money {
+        height: 45px;
+        font-size: 32px;
+    }
+
+    .money-remove #btn-take-out {
+        width: 180px;
+        height: 50px;
+        font-size: 32px;
+    }
+
+    .total-amount-taken-out p {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .total-amount-taken-out .container {
+        flex-direction: column;
+    }
+
+    .max-money-taken-out {
+        margin-top: 370px;
+    }
+
+    .max-money-taken-out p {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 32px;
+    }
+}
+/*-/-*/
+
+/* WIDTH 320 */
+@media (max-width: 320px) {
+    .money-remove label {
+        font-size: 32px;
+    }
+
+    .money-remove label, .money-remove input, .money-remove button {
+        margin: 15px 0;
+    }
+
+    .money-remove #money {
+        width: 280px;
+        height: 40px;
+        font-size: 35px;
+    }
+
+    .money-remove #btn-take-out {
+        width: 275px;
+        height: 50px;
+        font-size: 35px;
+    }
+
+    .max-money-taken-out {
+        flex-direction: column;
+    }
+}
+/*-/-*/
+
+/*-/-*/
