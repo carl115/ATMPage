@@ -227,13 +227,10 @@
     .total-amount-taken-out .container {
         width: 100%;
         height: 115px;
+        justify-content: flex-start;
         flex-direction: column;
         overflow: hidden;
         overflow-y: auto;
-    }
-
-    .total-amount-taken-out .container #ticket-1 {
-        margin-top: 305px;
     }
 
     .total-amount-taken-out #error {
@@ -296,18 +293,6 @@
     .total-amount-taken-out p {
         font-size: 20px;
         margin-bottom: 5px;
-    }
-
-    .total-amount-taken-out .container {
-        width: 100%;
-        height: 125px;
-        flex-direction: column;
-        overflow: hidden;
-        overflow-y: auto;
-    }
-
-    .total-amount-taken-out .container #ticket-1 {
-        margin-top: 305px;
     }
 
     .max-money-taken-out {
